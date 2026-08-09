@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNYZZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-hero">
+        <img src="img/background.png" alt="Background Glitch">
+        <div class="fade-out"></div>
+    </div>
+
+    <div class="container">
+        
+        <header>
+            <div class="profile-container">
+                <img src="img/profile.png" alt="Profile" class="profile-pic">
+            </div>
+            <h1 class="glow-text">SNYZZ</h1>
+            <h2 class="subtitle">HARD TECHNO | DOOMCORE | UPTEMPO</h2>
+            <!-- Nouvel onglet clickable -->
+            <button id="aboutBtn" class="neon-button">QUI EST SNYZZ ?</button>
+        </header>
+
+        <main>
+            <h3 class="section-title">LATEST RELEASES</h3>
+            
+            <div class="grid-layout">
+                <div class="main-player neon-box">
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/75llwrqecbqumSfXLDUbtW?utm_source=generator&theme=0&si=ae849b51b6b64b13" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+
+                <div class="ep-grid">
+                    <div class="ep-card dark-card neon-box"><img src="img/Rock.jpg" alt="EP"><h5>ROCK THAT BODY</h5><p>AOUT 2026 - HARD TECH REMIX</p><div class="ep-links"><a href="https://open.spotify.com/intl-fr/track/6SVho4j9UTonGIeDbp0fxR?si=26c3ac005d26466a" target="_blank"><i class="fa-brands fa-spotify"></i></a><a href="https://soundcloud.com/snyzz_0ff/rock-that-body-remix-hard?si=71e116699b274229843dc6e4469e3f0b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></div></div>
+                    <div class="ep-card dark-card neon-box"><img src="img/TheBeast.jpg" alt="EP"><h5>THE BEAST WITHIN THEM</h5><p>AOUT 2026</p><div class="ep-links"><a href="https://open.spotify.com/intl-fr/track/0TABmzJ8fSDnyx3e322Ygv?si=80a17b1307f14f3e" target="_blank"><i class="fa-brands fa-spotify"></i></a><a href="https://soundcloud.com/snyzz_0ff/the-beast-within-them" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></div></div>
+                    <div class="ep-card dark-card neon-box"><img src="img/HELL.jpg" alt="EP"><h5>HELL</h5><p>AVRIL 2026</p><div class="ep-links"><a href="https://open.spotify.com/intl-fr/track/2dKM7wsfbpETNxx9Vq4UIM?si=b234ee786c634189" target="_blank"><i class="fa-brands fa-spotify"></i></a></div></div>
+                    <div class="ep-card dark-card neon-box"><img src="img/ECSTASY.jpg" alt="EP"><h5>ECSTASY</h5><p>AVRIL 2026</p><div class="ep-links"><a href="https://open.spotify.com/intl-fr/track/0czXYa0NQQ6ezdqrKZqkp8?si=e8025690869e4d68" target="_blank"><i class="fa-brands fa-spotify"></i></a></div></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact">CONTACT: contact@snyzz-official.com</div>
+            <div class="footer-logo"><img src="img/logo.png" alt="Logo" style="height: 40px; filter: invert(1);"></div>
+            <div class="socials">
+                <a href="https://www.instagram.com/snyzz.0ff/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://soundcloud.com/snyzz_0ff" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                <a href="https://www.youtube.com/@SnyzzTechno" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://open.spotify.com/intl-fr/artist/6FZFh9lGdW7BQTDkB1qOQA?si=h_hg2TLXQ-adxaY-5dvrtg" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.deezer.com/fr/artist/289715481" target="_blank"><i class="fa-brands fa-deezer"></i></a>
+
+            </div>
+        </footer>
+    </div>
+    <!-- Modale "À Propos" -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content neon-box">
+            <span class="close-btn">&times;</span>
+            <h2 class="glow-text" style="font-size: 2rem;">À PROPOS DE MOI</h2>
+            <!-- N'oublie pas de mettre ta vraie photo dans le dossier img -->
+            <img src="img/vrai-photo.webp" alt="Vraie photo de SNYZZ" class="real-photo">
+            <p>Je suis un jeune producteur passionné de Hard Techno, Doomcore et Uptempo. Mon but est de vivre de ma passion, rentrer dans le monde de la HardTech et faire profiter mes auditeurs ! </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
