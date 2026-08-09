@@ -308,6 +308,7 @@ footer {
 }
 
 /* --- RESPONSIVE MOBILE --- */
+/* --- RESPONSIVE MOBILE CORRIGÉ --- */
 @media (max-width: 900px) { 
     html, body { 
         height: auto !important;
@@ -333,8 +334,17 @@ footer {
         gap: 16px; 
     }
 
-    .main-player iframe { 
-        height: 350px !important; 
+    .main-player {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .main-player iframe {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 352px !important; /* Hauteur idéale pour le lecteur Spotify complet */
     }
 
     .ep-grid { 
