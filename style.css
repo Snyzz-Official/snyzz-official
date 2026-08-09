@@ -307,7 +307,7 @@ footer {
     color: var(--text-light);
 }
 
-/* --- RESPONSIVE MOBILE --- */
+/* --- RESPONSIVE MOBILE COMPLET ET CORRIGÉ --- */
 @media (max-width: 900px) { 
     html, body { 
         height: auto !important;
