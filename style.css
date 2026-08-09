@@ -308,11 +308,10 @@ footer {
 }
 
 /* --- RESPONSIVE MOBILE --- */
-/* --- RESPONSIVE MOBILE CORRIGÉ --- */
 @media (max-width: 900px) { 
     html, body { 
         height: auto !important;
-        overflow-y: auto !important; /* Réactive le scroll sur téléphone */
+        overflow-y: auto !important; 
     }
 
     .container { 
@@ -324,16 +323,43 @@ footer {
         gap: 20px;
     }
 
+    header {
+        margin-bottom: 5px;
+    }
+
+    .profile-pic { 
+        width: 110px; 
+        height: 110px; 
+    }
+
+    .glow-text {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle { 
+        font-size: 0.75rem; 
+        letter-spacing: 1.5px; 
+        white-space: nowrap; 
+    }
+
+    .neon-button {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+        margin-top: 12px;
+    }
+
     main { 
         flex: none; 
         margin: 10px 0;
     }
 
     .grid-layout { 
-        grid-template-columns: 1fr; /* Empile Spotify et les EPs l'un sous l'autre */
+        grid-template-columns: 1fr; 
         gap: 16px; 
     }
 
+    /* --- CORRECTION DU LECTEUR SPOTIFY SUR MOBILE --- */
     .main-player {
         width: 100%;
         max-width: 100%;
@@ -341,20 +367,32 @@ footer {
         border-radius: 12px;
     }
 
-    .main-player iframe {
+    .main-player iframe { 
         width: 100% !important;
         max-width: 100% !important;
-        height: 352px !important; /* Hauteur idéale pour le lecteur Spotify complet */
+        height: 352px !important; 
     }
 
     .ep-grid { 
-        grid-template-columns: 1fr 1fr; /* Garde les 2 colonnes pour les EPs si ça passe, ou passe à 1fr si tu préfères */
-        gap: 12px; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px; 
     }
 
-    .profile-pic { 
-        width: 120px; 
-        height: 120px; 
+    .ep-card {
+        min-height: 140px;
+    }
+
+    .ep-card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .ep-card h5 {
+        font-size: 0.8rem;
+    }
+
+    .ep-card p {
+        font-size: 0.65rem;
     }
 
     footer { 
@@ -362,6 +400,7 @@ footer {
         gap: 15px; 
         text-align: center; 
         padding-bottom: 20px;
+        margin-top: 20px;
     }
 
     .contact, .footer-logo, .socials { 
@@ -371,5 +410,6 @@ footer {
 
     .socials a { 
         margin: 0 10px; 
+        font-size: 1.2rem;
     }
 }
