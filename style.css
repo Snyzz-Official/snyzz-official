@@ -291,7 +291,6 @@ footer {
 .contact { justify-self: start; }
 .footer-logo { justify-self: center; } 
 .footer-logo img { height: 40px !important; /* Logo plus gros */ transition: filter 0.3s; }
-.footer-logo img:hover { filter: invert(1) drop-shadow(0 0 8px rgb(255, 255, 255)); }
 .socials { justify-self: end; }
 .socials a { 
     color: var(--text-dim); 
